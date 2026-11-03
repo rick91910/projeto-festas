@@ -1,0 +1,86 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Gestão de Eventos",
+    "version": "1.0.0",
+    "description": "API REST para gerenciamento de eventos, usuários, categorias e presenças."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Servidor Local"
+    }
+  ],
+  "paths": {
+    "/api/users": {
+      "get": {
+        "summary": "Listar todos os usuários",
+        "responses": {
+          "200": { "description": "Sucesso" }
+        }
+      },
+      "post": {
+        "summary": "Criar novo usuário",
+        "responses": {
+          "201": { "description": "Criado com sucesso" }
+        }
+      }
+    },
+    "/api/categories": {
+      "get": {
+        "summary": "Listar todas as categorias",
+        "responses": {
+          "200": { "description": "Sucesso" }
+        }
+      },
+      "post": {
+        "summary": "Criar nova categoria",
+        "responses": {
+          "201": { "description": "Criado com sucesso" }
+        }
+      }
+    },
+    "/api/events": {
+      "get": {
+        "summary": "Listar todos os eventos",
+        "responses": {
+          "200": { "description": "Sucesso" }
+        }
+      },
+      "post": {
+        "summary": "Criar novo evento",
+        "responses": {
+          "201": { "description": "Criado com sucesso" }
+        }
+      }
+    },
+    "/api/attendances": {
+      "get": {
+        "summary": "Listar presenças nos eventos",
+        "responses": {
+          "200": { "description": "Sucesso" }
+        }
+      },
+      "post": {
+        "summary": "Registrar presença em evento",
+        "responses": {
+          "201": { "description": "Criado com sucesso" }
+        }
+      }
+    },
+    "/api/maintain-events": {
+      "get": {
+        "summary": "Listar manutentores dos eventos",
+        "responses": {
+          "200": { "description": "Sucesso" }
+        }
+      },
+      "post": {
+        "summary": "Vincular usuário à manutenção do evento",
+        "responses": {
+          "201": { "description": "Criado com sucesso" }
+        }
+      }
+    }
+  }
+}
